@@ -6,8 +6,8 @@ At the start, the application checks the file " application.ini" and looks to se
 If the registration data is incorrect or missing - the program must issue an authentication code for key generation and input fields license key. Until the correct key is entered - the program should not continue on.
 To complicate the hacking process, a linear congruential generator is used.
 When starting, the application reads the serial number of the hard disk x. For the given parameters A, B, C, D, P, Q generates numbers y, z
-y=(A*x+B)modP
-z=(C*y+D)modP
+y=(A*x+B)modP;
+z=(C*y+D)modP;
 Where P are 32-bit prime number, x is the device serial number, y is the license key, z is the authentication code.
 
 ## To Use
